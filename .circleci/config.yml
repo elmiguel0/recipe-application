@@ -43,6 +43,8 @@ jobs:
       - store_test_results:
           path: target/surefire-reports
 
-      - run:
-          name: Send to CodeCov
-          command: bash <(curl -s https://codecov.io/bash)
+      -codecov/upload:
+        file: {{coverage_report_filepath}}
+     # - run:
+      #    name: Send to CodeCov
+       #   command: bash <(curl -s https://codecov.io/bash)
