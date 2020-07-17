@@ -1,0 +1,19 @@
+package org.miguelramos.recipeapplication.service;
+
+import org.miguelramos.recipeapplication.commands.RecipeCommand;
+import org.miguelramos.recipeapplication.domain.Recipe;
+
+import java.util.Set;
+
+public interface RecipeService {
+
+    Set<Recipe> getRecipes();
+
+    Recipe findById(Long l);
+
+    RecipeCommand findCommandById(Long l);
+
+    RecipeCommand saveRecipeCommand(RecipeCommand command);
+
+    void deleteById(Long idToDelete);
+}
