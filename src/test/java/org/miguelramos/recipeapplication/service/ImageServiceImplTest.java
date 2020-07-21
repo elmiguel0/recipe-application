@@ -35,8 +35,6 @@ public class ImageServiceImplTest {
     public void saveImageFile() throws Exception {
         //given
         Long id = 1L;
-        MultipartFile multipartFile = new MockMultipartFile("imagefile", "testing.txt", "text/plain",
-                "Spring Framework Guru".getBytes());
 
     }
 
