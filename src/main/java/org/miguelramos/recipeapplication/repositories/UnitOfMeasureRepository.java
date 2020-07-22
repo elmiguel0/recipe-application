@@ -2,7 +2,6 @@ package org.miguelramos.recipeapplication.repositories;
 
 import org.miguelramos.recipeapplication.domain.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 

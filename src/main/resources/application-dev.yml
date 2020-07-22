@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mr_dev
+    username: mr_dev_user
+    password: migue
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+    show-sql: true
+    #properties:
+           # javax:
+       # persistence:
+        #  schema-generation:
+         #   create-source: metadata
+          #  scripts:
+           #   action: create
+            #  create-target: migue_database_create.sql
